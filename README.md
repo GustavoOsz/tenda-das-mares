@@ -5,7 +5,8 @@
 
 #  Responsabilidades atribuidas aos membros 
 <p>Gustavo Oliveira: Programção, Pesquisas tecnicas, Prototipação e testes.</p>
-Maria Eduarda: Documentação, Pesquisas pedagogicas e Desgnin.
+
+> Maria Eduarda: Documentação, Pesquisas pedagogicas e Desgnin.
 
 
  
