@@ -84,4 +84,9 @@ O tempo de carregamento da página principal deve ser inferior a 2 segundos.
 | R8 | Intolerância religiosa | Negócio/Social | Alto | Baixa | Mensagem educativa e informativa no site. |
 
 
+##  Prototipo de Telas
+
+https://app.quant-ux.com/#/test.html?h=a2aa10a4KDXbSrExcopSQk7LbzYkezCzCXUxHFJzFyn4dqQVWqohdizoN7yC&ln=en
+
+
  
