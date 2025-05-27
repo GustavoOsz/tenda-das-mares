@@ -92,4 +92,8 @@ https://app.quant-ux.com/#/test.html?h=a2aa10a4KDXbSrExcopSQk7LbzYkezCzCXUxHFJzF
 
 https://docs.google.com/spreadsheets/d/1f7OQ3aW2-wIpsvFL-F20eMCcSuVfTgB-dk9MrnMogkA/edit?usp=sharing 
 
+##  Trello
+
+https://trello.com/b/luHmv81z/tenda-das-mares
+
  
