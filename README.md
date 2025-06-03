@@ -1,6 +1,6 @@
 
 <p align="center">
- <img style="font-align: center;" src="Documentos/Imagens/Ativo 2.png">
+ <img style="font-align: center;" src="Documentos/Imagens/Tenda das mares  - logo.png">
 
  <br/><br/><br/>
 
