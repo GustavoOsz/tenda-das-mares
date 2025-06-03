@@ -2,7 +2,7 @@
 <p align="center">
  <img style="font-align: center;" src="Documentos/Imagens/Tenda das mares  - logo.png">
 
- <br/><br/><br/>
+ <br/><br/>
 
  <p align="center">Tenda das Marés é uma aplicação web voltada para o comércio online que foi idealizada em 15 de fevereiro de 2025, especializada na venda de artigos religiosos das religiões de matriz africana. Seu principal objetivo é promover e valorizar as culturas afro-brasileira e indígena.</p>
 
