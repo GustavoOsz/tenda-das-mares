@@ -30,12 +30,6 @@ if (!isset($_SESSION['id_usuario']) || $_SESSION['tipo'] !== 'admin') {
         <p>Adicionar, editar e remover produtos do catálogo.</p>
       </a>
 
-      <!-- Gerenciar Usuários -->
-      <a href="gerenciar_usuarios.php" class="bg-white/10 border border-yellow-400 hover:bg-white/20 transition rounded-xl p-6 text-center shadow-lg">
-        <h2 class="text-2xl font-semibold text-yellow-300 mb-2">👥 Usuários</h2>
-        <p>Visualize e gerencie todos os usuários do sistema.</p>
-      </a>
-
       <!-- Histórico de Compras -->
       <a href="historico_compras_admin.php" class="bg-white/10 border border-yellow-400 hover:bg-white/20 transition rounded-xl p-6 text-center shadow-lg">
         <h2 class="text-2xl font-semibold text-yellow-300 mb-2">🧾 Histórico</h2>
