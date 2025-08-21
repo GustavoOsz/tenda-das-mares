@@ -40,6 +40,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Erro: " . $stmt->error;
     }
 }
+
+// Upload da imagem
+$imagem = "";
+if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] === 0) {
+    $nomeImg = uniqid() . "-" . basename($_FILES['imagem']['name']);
+    $caminho = "../img/" . $nomeImg; // Salva dentro da pasta img
+    if (move_uploaded_file($_FILES['imagem']['tmp_name'], $caminho)) {
+        $imagem = "img/" . $nomeImg; // Caminho que vai pro banco
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -62,10 +72,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label class="block mb-2 font-semibold">Data:</label>
             <input type="date" name="data" value="<?= date('Y-m-d'); ?>" required class="w-full border rounded-lg p-2 mb-4">
 
-            <label class="block mb-2 font-semibold">Imagem (arquivo ou link):</label>
-            <input type="file" name="imagem" accept="image/*" class="w-full mb-2">
-            <input type="url" name="imagem_link" placeholder="Cole o link da imagem aqui" class="w-full border rounded-lg p-2 mb-4">
-
+            <div>
+                <label class="block font-semibold mb-1">Imagem</label>
+                <input type="file" name="imagem" accept="image/*" class="w-full border border-gray-300 rounded-lg p-2">
+            </div>
             <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">
                 Cadastrar
             </button>

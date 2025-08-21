@@ -33,7 +33,7 @@ if (!$produto) { die("Produto não encontrado."); }
       <a href="../produtos.php" class="hover:text-[#b85e2b]">Produtos</a>
       <a href="../pesquisas.php" class="hover:text-[#b85e2b]">Blog</a>
       <a href="#" class="hover:text-[#b85e2b]">Sobre nós</a>
-      <a href="#" class="hover:text-[#b85e2b]">Contato</a>
+      <a href="../contato.php" class="hover:text-[#b85e2b]">Contato</a>
       <a href="../login.php" class="hover:text-[#b85e2b]">Login</a>
     </nav>
   </header>
@@ -74,7 +74,16 @@ if (!$produto) { die("Produto não encontrado."); }
           </button>
 </form>
       </div>
+      <?php if (isset($_SESSION['usuario_tipo']) && $_SESSION['usuario_tipo'] === 'admin'): ?>
+  <form method="POST" action="excluir_produto.php" onsubmit="return confirm('Tem certeza que deseja excluir este produto?');" class="mt-4">
+    <input type="hidden" name="id" value="<?= $produto['id'] ?>">
+    <button type="submit" class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded text-sm">
+      Excluir Produto
+    </button>
+  </form>
+<?php endif; ?>
     </div>
+    
 
     <!-- Informações (sua tabela não tem 'descricao'; remova ou troque por texto fixo) -->
     <div class="lg:col-span-3 mt-6">

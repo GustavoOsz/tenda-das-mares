@@ -46,7 +46,7 @@ $tipoUsuario = $resTipo->fetch_assoc()['tipo'];
            </div>
         <nav class="flex gap-6 text-lg font-medium">
             <a href="produtos.php" class="hover:text-[#b85e2b]">Produtos</a>
-            <a href="pesquisas.php" class="hover:text-[#b85e2b]">Blog</a>
+            <a href="pesquisas.php" class="hover:text-[#b85e2b]">Pesquisas</a>
             <a href="sobre.php" class="hover:text-[#b85e2b]">Sobre nós</a>
             <a href="contato.php" class="hover:text-[#b85e2b]">Contato</a>
             <a href="login.php">
@@ -78,6 +78,14 @@ $tipoUsuario = $resTipo->fetch_assoc()['tipo'];
     <!-- Coluna central - conteúdo -->
     <section class="bg-white p-6 rounded-2xl shadow col-span-2">
       <?php if ($selected): ?>
+        <?php if ($tipoUsuario === 'admin' && $selected): ?>
+    <form action="pesquisas-clas/excluir_pesquisa.php" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir esta pesquisa?');" class="mt-4">
+        <input type="hidden" name="id" value="<?= $selected['id'] ?>">
+        <button type="submit" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded font-medium shadow">
+            Excluir Pesquisa
+        </button>
+    </form>
+<?php endif; ?>
         <h2 class="text-xl font-bold mb-2">
           <?= htmlspecialchars($selected['nome']) ?>
         </h2>

@@ -15,8 +15,8 @@
         <nav class="flex gap-6 text-lg font-medium">
             <a href="produtos.php" class="hover:text-[#b85e2b]">Produtos</a>
             <a href="pesquisas.php" class="hover:text-[#b85e2b]">Pesquisas</a>
-            <a href="\Sobre.php" class="hover:text-[#b85e2b]">Sobre nós</a>
-            <a href="\Contato.php" class="hover:text-[#b85e2b]">Contato</a>
+            <a href="Sobre.php" class="hover:text-[#b85e2b]">Sobre nós</a>
+            <a href="Contato.php" class="hover:text-[#b85e2b]">Contato</a>
             <a href="login.php">
                 <svg class="h-6 w-6 text-[#4f2905]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A4.992 4.992 0 0112 20a4.992 4.992 0 016.879-2.196M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
